@@ -1,0 +1,6 @@
+rootProject.name = 'learning-explicit-architecture'
+
+
+rootProject.children.forEach {
+	it.buildFileName = it.name + '.gradle'
+}

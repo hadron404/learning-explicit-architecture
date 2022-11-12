@@ -1,0 +1,53 @@
+import org.springframework.boot.gradle.plugin.SpringBootPlugin
+
+plugins {
+	id 'org.springframework.boot' version '2.7.5'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+	id 'java'
+}
+
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+subprojects {
+	group = 'com.example'
+	version = '0.0.1-SNAPSHOT'
+
+	apply plugin: 'java'
+	apply plugin: 'idea'
+	apply plugin: 'org.springframework.boot'
+	apply plugin: 'io.spring.dependency-management'
+
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
+
+	repositories {
+		mavenCentral()
+		mavenLocal()
+	}
+
+	[compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+
+	dependencyManagement {
+		imports {
+			mavenBom SpringBootPlugin.BOM_COORDINATES
+		}
+	}
+	dependencies {
+		compileOnly 'org.projectlombok:lombok'
+		annotationProcessor 'org.projectlombok:lombok'
+		testImplementation('org.springframework.boot:spring-boot-starter-test') {
+			exclude group: 'junit' // excluding junit 4
+		}
+	}
+
+	tasks.named('test') {
+		useJUnitPlatform()
+	}
+}
+
+
