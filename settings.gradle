@@ -10,4 +10,6 @@ include 'adapters:repository'
 findProject(':adapters:repository')?.name = 'repository'
 include 'core:application'
 findProject(':core:application')?.name = 'application'
+include 'core:domain:model'
+findProject(':core:domain:model')?.name = 'model'
 
