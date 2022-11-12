@@ -4,3 +4,8 @@ rootProject.name = 'learning-explicit-architecture'
 rootProject.children.forEach {
 	it.buildFileName = it.name + '.gradle'
 }
+
+include 'configuration'
+include 'adapters:repository'
+findProject(':adapters:repository')?.name = 'repository'
+

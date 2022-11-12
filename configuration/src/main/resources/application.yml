@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: example-architecture-explicit
+
+server:
+  port: 80
