@@ -8,4 +8,6 @@ rootProject.children.forEach {
 include 'configuration'
 include 'adapters:repository'
 findProject(':adapters:repository')?.name = 'repository'
+include 'core:application'
+findProject(':core:application')?.name = 'application'
 
