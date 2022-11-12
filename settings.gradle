@@ -12,4 +12,6 @@ include 'core:application'
 findProject(':core:application')?.name = 'application'
 include 'core:domain:model'
 findProject(':core:domain:model')?.name = 'model'
+include 'core:domain:service'
+findProject(':core:domain:service')?.name = 'service'
 
