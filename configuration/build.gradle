@@ -1,7 +1,4 @@
-archivesBaseName = 'explicit-configuration'
-jar.enabled = true
-bootJar.enabled = true
-
 dependencies {
+	implementation project(":adapters:web")
 	implementation 'org.springframework.boot:spring-boot-starter'
 }

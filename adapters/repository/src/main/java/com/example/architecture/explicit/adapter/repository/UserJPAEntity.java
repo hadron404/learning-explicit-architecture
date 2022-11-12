@@ -1,4 +1,4 @@
-package com.example.architecture.explicit.repository;
+package com.example.architecture.explicit.adapter.repository;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

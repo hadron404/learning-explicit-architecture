@@ -1,19 +1,14 @@
 rootProject.name = 'learning-explicit-architecture'
 
 
-rootProject.children.forEach {
-	it.buildFileName = it.name + '.gradle'
-}
+//rootProject.children.forEach {
+//	it.buildFileName = it.name + '.gradle'
+//}
 
 include 'configuration'
 include 'adapters:repository'
-findProject(':adapters:repository')?.name = 'repository'
 include 'core:application'
-findProject(':core:application')?.name = 'application'
 include 'core:domain:model'
-findProject(':core:domain:model')?.name = 'model'
 include 'core:domain:service'
-findProject(':core:domain:service')?.name = 'service'
 include 'adapters:web'
-findProject(':adapters:web')?.name = 'web'
 

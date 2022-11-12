@@ -1,7 +1,7 @@
-archivesBaseName = 'web'
-jar.enabled = true
-bootJar.enabled = true
-
 dependencies {
+	implementation project(':core:application')
+	implementation project(':core:domain:model')
+
+
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 }
