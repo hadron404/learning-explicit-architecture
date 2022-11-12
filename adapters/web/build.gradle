@@ -1,0 +1,7 @@
+archivesBaseName = 'web'
+jar.enabled = true
+bootJar.enabled = true
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+}
