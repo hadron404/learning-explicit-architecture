@@ -1,0 +1,18 @@
+== TODO
+
+* [.line-through]## How to create `multi-module` project with Spring-Boot in Gradle ##
+* [.line-through]## How to organize project by `explicit-architecture` style ##
+* [.line-through]## How to use `springify multiconfig` ##
+* How to alias child module's `build.gradle` file
+* How to build image by gradle
+* How to deploy in `Docker`
+* How to deploy in `Kubernetes`
+* How to integrate in `Github workflow`
+* How to integrate `CI/CD`
+* How to auto-run tests when push code;
+* etc.
+
+== Reference
+* https://bootify.io/multi-module/best-practices-for-spring-boot-multi-module.html[Best practices for spring-boot multi-module]
+* https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/[Explicit architecture]
+* etc.
