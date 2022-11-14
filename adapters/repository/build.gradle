@@ -1,8 +1,5 @@
-archivesBaseName = 'repository'
-jar.enabled = true
-bootJar.enabled = true
-
 dependencies {
+
 	implementation project(':core:application')
 	implementation project(':core:domain:model')
 

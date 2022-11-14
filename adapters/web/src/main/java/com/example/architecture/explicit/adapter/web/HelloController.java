@@ -16,7 +16,7 @@ public class HelloController {
 
 	private final GetUserUseCase getUserUseCase;
 
-	@GetMapping("/world/{userId::\\d+}")
+	@GetMapping("/world/{userId:\\d+}")
 	public String helloWorld(@PathVariable("userId") Integer userId) {
 		return getUserUseCase.getName(new User.UserId(userId));
 	}

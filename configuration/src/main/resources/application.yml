@@ -1,6 +1,17 @@
 spring:
   application:
     name: example-architecture-explicit
-
+  datasource:
+    url: jdbc:mysql://localhost:3306/trial
+    password: '123456'
+    username: root
+  jpa:
+    database: mysql
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
 server:
   port: 80
