@@ -4,12 +4,14 @@
 * [.line-through]## How to organize project by `explicit-architecture` style ##
 * [.line-through]## How to use `springify multiconfig` ##
 * How to alias child module's `build.gradle` file
-* How to build image by gradle
+* How to build Docker images with Gradle
 * How to deploy in `Docker`
 * How to deploy in `Kubernetes`
 * How to integrate in `Github workflow`
 * How to integrate `CI/CD`
-* How to auto-run tests when push code;
+* How to auto-run tests when push code
+* How to run application in different environment
+* How to split `.yml` file's param in environment file
 * etc.
 
 == Reference
