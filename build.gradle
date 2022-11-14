@@ -20,7 +20,7 @@ allprojects {
 	}
 }
 subprojects {
-	group = 'com.example'
+	group = 'com.example.architecture.explicit'
 	version = '0.0.1-SNAPSHOT'
 
 	apply plugin: 'java'
