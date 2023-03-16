@@ -1,3 +1,7 @@
+plugins {
+	id "com.google.cloud.tools.jib"
+}
+
 dependencies {
 	implementation project(':adapters:web')
 	implementation project(':adapters:repository')
@@ -6,3 +10,40 @@ dependencies {
 	implementation 'com.it-surmann:springify-multiconfig:1.0.0'
 
 }
+//
+//jib {
+//	// 基础镜像，来自dockerhub,如果是私服，需要加上鉴权信息，和to下的auth节点相同
+//	// https://hub.docker.com/
+//	from {
+//		image = 'openjdk:17'
+//	}
+//	// 构建后的镜像名称以及私服地址、鉴权信息
+//	to {
+//		image = 'xx'
+////		auth {
+////			username = '登录账号'
+////			password = '登录密码'
+////		}
+//	}
+//	// 容器相关设置
+//	container {
+//		// 创建时间
+//		creationTime = new Date()
+//		// JVM 启动参数
+//		jvmFlags = [
+//				'-Djava.security.egd=file:/dev/./urandom',
+//				'-Dspring.profiles.active=prod',
+//				'-Dfile.encoding=utf-8',
+//				'-Duser.timezone=GMT+08'
+//		]
+//		// 启动类
+//		// mainClass = 'com.xxx.RunApplication'
+//		// 容器在运行时公开的端口
+//		ports = ['8080']
+//		// 放置应用程序内容的容器上的根目录
+//		appRoot = '/deploy/service'
+//	}
+//}
+
+
+

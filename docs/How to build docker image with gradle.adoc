@@ -1,0 +1,5 @@
+
+
+== reference
+* https://plugins.gradle.org/plugin/com.google.cloud.tools.jib
+* https://blog.csdn.net/qq_43437874/article/details/125423690

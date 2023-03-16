@@ -1,0 +1,33 @@
+= How to deploy harbor on Kubernetes
+== 前期准备
+
+1. Helm
+2. Kubernetes Cluster
+
+== 安装
+
+----
+helm repo add harbor https://helm.goharbor.io
+----
+
+----
+helm fetch harbor/harbor --untar
+----
+
+
+----
+kubectl create namespace harbor
+----
+
+
+----
+helm install harbor harbor/harbor -n harbor
+----
+
+== 验证
+kubectl get pod -n harbor
+
+== 使用
+
+
+* https://goharbor.io/docs/2.6.0/install-config/harbor-ha-helm/
