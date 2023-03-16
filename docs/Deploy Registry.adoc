@@ -1,0 +1,20 @@
+
+= Deploying registry
+
+
+== Solution
+* Registry
+* Harbor in docker
+* Harbor in k8s
+
+
+== How to deploy registry by harbor
+
+
+
+== Reference
+* https://docs.docker.com/registry/deploying/
+* https://goharbor.io/docs/2.1.0/install-config/quick-install-script/
+* https://github.com/goharbor/harbor
+* https://www.cnblogs.com/adjk/p/11043856.html[一篇非常好的介绍 Harbor 的文章]
+* https://helm.sh/
